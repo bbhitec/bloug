@@ -7,6 +7,7 @@ Blog writing app built with modern React.js and various features
     - Hooks, 
     - Router
 - JSON server endpoint testing
+    - Fetching securing (async handling, server down, bad response)
 
 ![](https://shields.io/badge/-react-4377cb?logo=react)
 ![](https://shields.io/badge/-node-4377cb?logo=node.js)
