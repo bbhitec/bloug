@@ -1,36 +1,13 @@
-import { useEffect, useState } from "react"
 import BlogList from "./BlogList"
+import useFetch from "./useFetch"
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null) // blog list to be populated frmm the backend
-    const [isLoading, setIsLoading] = useState(true)
-    const [errorMessage, setErrorMessage] = useState(null)
+    const { isLoading, errorMessage, data: blogs } = useFetch("http://localhost:3000/blogs")
 
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id)
         setBlogs(newBlogs)
     }
-
-    useEffect(() => {
-        fetch("http://localhost:3000/blogs")
-            .then(res => {
-                // in case we get a faulty response that doesn't throw an error,
-                // we throw it manually (bad path, for example)
-                if (!res.ok) {
-                    throw Error("Couldn't fetch data")
-                }
-                return res.json();
-            })
-            .then(data => {
-                setBlogs(data)
-                setErrorMessage(null)
-                setIsLoading(false)
-            })
-            .catch(err => {
-                setErrorMessage(err.message)
-                setIsLoading(false)
-            })
-    }, [])
 
     return (
         <div className="home">

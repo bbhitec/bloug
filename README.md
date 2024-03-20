@@ -4,8 +4,9 @@ Blog writing app built with modern React.js and various features
 
 ## Gains
 - React.js
-    - Hooks, 
-    - Router
+    - Basic hooks
+    - Custom hooks
+- [ ] React Router
 - JSON server endpoint testing
     - Fetching securing (async handling, server down, bad response)
 
