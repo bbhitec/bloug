@@ -5,6 +5,9 @@ import Create from './Create'
 import BlogPage from './BlogPage'
 
 const App = () => {
+  // this is the single definition of the backend url (remote url can be used)
+  const url = "http://localhost:3000/blogs/"
+  // const url = "https://my-json-server.typicode.com/bbhitec/bloug-json-server/blogs/"
 
   return (
     <Router>
@@ -14,13 +17,13 @@ const App = () => {
           {/* populate the router routes here (the header will not reload) */}
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home backendUrl={url}/>
             </Route>
             <Route path="/create">
-              <Create />
+              <Create backendUrl={url}/>
             </Route>
             <Route path="/blogs/:id">
-              <BlogPage />
+              <BlogPage backendUrl={url}/>
             </Route>
           </Switch>
         </div>

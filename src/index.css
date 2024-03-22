@@ -46,11 +46,13 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  transition: 0.15s;
 }
 
 .navbar a:hover {
   color: var(--color-main);
 }
+
 
 
 .content {

@@ -1,14 +1,19 @@
 import { useParams } from "react-router-dom"
+import { useHistory } from "react-router-dom";
 import useFetch from "./useFetch"
 
 
-const BlogPage = () => {
+const BlogPage = ({backendUrl: url} = props) => {
     const { id } = useParams(); // access router endpoint parameters
-    const { isLoading, errorMessage, data: blog } = useFetch("https://my-json-server.typicode.com/bbhitec/bloug-json-server/blogs/" + id)
+    const { isLoading, errorMessage, data: blog } = useFetch(url + id)
+    const hist = useHistory()
 
     const handleDelete = (id) => {
-        const newBlogs = blogs.filter(blog => blog.id !== id)
-        // setBlogs(newBlogs)
+        fetch(url + blog.id, {
+            method: "DELETE"
+        }).then(() => {
+            hist.push("/")  // redirect from deleted page
+        })
     }
 
     return (
@@ -23,12 +28,8 @@ const BlogPage = () => {
                     <p>{blog.body}</p>
 
                     {/* <Link to="/">Home</Link> */}
-
-
                     <button onClick={() => (null)}>Back</button>
                     <button onClick={() => handleDelete(blog.id)}>Delete</button>
-
-
 
                 </article>
             }
