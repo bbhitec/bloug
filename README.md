@@ -39,6 +39,8 @@ Pull `npm install` and `npm run dev`
 - [ ] fix remote backend json-server [here]
 - [ ] blog delete button in blog list
 - [ ] Various responsive design techniques
+- [ ] search functionality
+- [ ] view and likes functionality
 - [ ] Input to state handling
     - [ ] Input state in params for input recovery?
 - [ ] User areas and dashboards?

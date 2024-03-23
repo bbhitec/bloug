@@ -12,7 +12,7 @@ const Home = ({backendUrl: url} = props) => {
             {errorMessage && <div>{errorMessage}</div>}
 
             {/* also, use this logical check to protect the inner .map from async blogs list */}
-            {blogs && <BlogList blogs={blogs} title="All Blogs"/>}
+            {blogs && <BlogList blogs={blogs} title=""/>}
 
         </div>
     )
