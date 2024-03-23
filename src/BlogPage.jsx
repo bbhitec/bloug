@@ -27,8 +27,7 @@ const BlogPage = ({backendUrl: url} = props) => {
                     <p>by {blog.author}</p>
                     <p>{blog.body}</p>
 
-                    {/* <Link to="/">Home</Link> */}
-                    <button onClick={() => (null)}>Back</button>
+                    <button onClick={() => hist.push("/")}>Back</button>
                     <button onClick={() => handleDelete(blog.id)}>Delete</button>
 
                 </article>

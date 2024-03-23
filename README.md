@@ -12,11 +12,10 @@ Easy and minimal blog writing app built with modern React.js and various feature
     - AbortController and useEffect cleanup
     - Endpoint parameters useage with useParams
     - Natural re-direction with useHistory
+    - 404 not found page
 - JSON server endpoint testing
     - Fetching securing (async handling, server down, bad response)
     - Loading states feedback
-    - [ ] Remotely hosted version
-    -
 
 <br>
 
@@ -36,7 +35,7 @@ Pull `npm install` and `npm run dev`
 
 <!--
 ## Next
-- [ ] fix brand styling
+- [ ] restyle - gray and purple
 - [ ] fix remote backend json-server [here]
 - [ ] blog delete button in blog list
 - [ ] Various responsive design techniques
