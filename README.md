@@ -16,6 +16,7 @@ Easy and minimal blog writing app built with modern React.js and various feature
 - JSON server endpoint testing
     - Fetching securing (async handling, server down, bad response)
     - Loading states feedback
+    - Backend deployment as web service
 
 <br>
 
@@ -30,23 +31,22 @@ Easy and minimal blog writing app built with modern React.js and various feature
 Pull `npm install` and `npm run dev`
 
 *Use the testing server*
-`https://my-json-server.typicode.com/bbhitec/bloug-json-server/blogs`
+`https://bloug-backend.onrender.com/`
 
 
 <!--
 ## Next
+- [ ] Use env variables for endpoint addresses
 - [ ] restyle - gray and purple
-- [ ] fix remote backend json-server [here]
+- [v] fix remote backend json-server
 - [ ] blog delete button in blog list
 - [ ] Various responsive design techniques
 - [ ] search functionality
-- [ ] view and likes functionality
-- [ ] Input to state handling
-    - [ ] Input state in params for input recovery?
+- [ ] views and likes functionality
+- [ ] Input fields to state efficient handling
+    - [ ] Input state in url params for input recovery?
 - [ ] User areas and dashboards?
-- [ ] Back end the blogs
 - [ ] Alternate fetching tech? (axios/ReactQuery?)
-- [ ] Use env variables for endpoint addresses
 
 -->
 

@@ -6,9 +6,8 @@ import BlogPage from './BlogPage'
 import NotFound from './NotFound'
 
 const App = () => {
-  // this is the single definition of the backend url (remote url can be used)
-  const url = "http://localhost:3000/blogs/"
-  // const url = "https://my-json-server.typicode.com/bbhitec/bloug-json-server/blogs/"
+  // single definition of the backend url
+  const url = "https://bloug-backend.onrender.com/blogs/"
 
   return (
     <Router>
