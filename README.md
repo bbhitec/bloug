@@ -17,6 +17,7 @@ Easy and minimal blog writing app built with modern React.js and various feature
     - Fetching securing (async handling, server down, bad response)
     - Loading states feedback
     - Backend deployment as web service
+    - Postman API testing
 
 <br>
 
