@@ -10,7 +10,7 @@ const App = () => {
   const url = "https://bloug-backend.onrender.com/blogs/"
 
   return (
-    <Router>
+    <Router basename="/bloug">
       <div className="app">
         <Header />
         <div className="content">
