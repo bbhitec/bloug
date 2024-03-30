@@ -35,6 +35,11 @@
   color: var(--color-primary);
 }
 
+.navbar h1 .header-dot {
+  color: var(--color-main);
+  font-size: 2rem;
+}
+
 .navbar .links {
   margin-left: auto;
 }

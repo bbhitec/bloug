@@ -1,6 +1,6 @@
 # Bloug React app
 
-Easy and minimal blog writing app built with modern React.js and various features
+Relaxing and minimal blog writing app cultivated with modern React.js and various features and best practices.
 
 ## Gains
 - React.js
@@ -22,7 +22,7 @@ Easy and minimal blog writing app built with modern React.js and various feature
 <br>
 
 ![](https://shields.io/badge/-react-4377cb?logo=react)
-![](https://shields.io/badge/-node-4377cb?logo=node.js)
+![](https://shields.io/badge/-node-grey?logo=node.js)
 ![](https://shields.io/badge/-json-4377cb?logo=json)
 ![](https://shields.io/badge/-css-4377cb?logo=css3)
 
@@ -31,12 +31,14 @@ Easy and minimal blog writing app built with modern React.js and various feature
 
 Pull `npm install` and `npm run dev`
 
-*Use the testing server*
-`https://bloug-backend.onrender.com/`
+*Use the testing server:*
+[`https://bloug-backend.onrender.com/`](https://bloug-backend.onrender.com/)
 
 
 <!--
 ## Next
+- [ ] [here] bug: refresh on inner pages like creaate page
+- [ ] input fields resizeability and sexiness
 - [ ] Use env variables for endpoint addresses
 - [ ] restyle - gray and purple
 - [v] fix remote backend json-server
