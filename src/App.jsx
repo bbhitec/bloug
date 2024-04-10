@@ -4,6 +4,7 @@ import Home from './Home'
 import Create from './Create'
 import BlogPage from './BlogPage'
 import NotFound from './NotFound'
+import Footer from './Footer'
 
 const App = () => {
   // single definition of the backend url
@@ -31,6 +32,7 @@ const App = () => {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   )
